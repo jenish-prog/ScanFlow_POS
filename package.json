@@ -1,0 +1,32 @@
+{
+  "name": "smart-retail-barcode-pos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:apk": "vite build && cap sync android && cd android && ./gradlew assembleDebug && cp app/build/outputs/apk/debug/app-debug.apk ../ScanFlow-POS.apk",
+    "build:apk:mac": "vite build && cap sync android && cd android && export JAVA_HOME=${JAVA_HOME:-/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home} && ./gradlew assembleDebug && cp app/build/outputs/apk/debug/app-debug.apk ../ScanFlow-POS.apk",
+    "cap:sync": "cap sync android",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
+  }
+}

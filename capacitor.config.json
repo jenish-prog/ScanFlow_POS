@@ -1,0 +1,5 @@
+{
+  "appId": "com.scanflow.pos",
+  "appName": "ScanFlow POS",
+  "webDir": "dist"
+}

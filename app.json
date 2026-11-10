@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "ScanFlow POS",
+    "slug": "scanflow-pos-mobile",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#090A0F",
+    "primaryColor": "#10B981",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.scanflow.pos",
+      "infoPlist": {
+        "NSCameraUsageDescription": "ScanFlow POS uses the camera to scan product EAN-13 and Code-128 barcodes."
+      }
+    },
+    "android": {
+      "package": "com.scanflow.pos",
+      "permissions": ["CAMERA", "VIBRATE"]
+    }
+  }
+}
